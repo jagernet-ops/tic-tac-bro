@@ -1,3 +1,106 @@
-.buttonRow button {
-  padding: 5vw;
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gameBoard {
+  margin-top: 2vh;
+  background-color: #3a4450;
+  padding: 2vw;
+  border-radius: 10px;
+}
+.playerInfo {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  font-size: large;
+  font-family: "Oswald";
+  margin-left: 1vw;
+}
+.turnIndicator {
+  align-self: center;
+  font-size: xx-large;
+  border-color: white;
+  border-radius: 10px;
+  margin-left: auto;
+  border-style: solid;
+  font-family: "Permanent Marker";
+  width: 45px;
+  height: 45px;
+  text-align: center;
+}
+.buttonRow {
+  display: flex;
+  flex-direction: row;
+}
+.buttonRow button,
+.buttonRow button:disabled {
+  width: 10vw;
+  height: 20vh;
+  border-radius: 10px;
+  font-family: "Permanent Marker";
+  font-size: xx-large;
+  background-color: white;
+  border-color: #000;
+  border-width: 5px;
+}
+.currentTurn {
+  text-align: center;
+  color: white;
+  font-family: "Oswald";
+}
+.winScreen,
+.drawScreen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2vh;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  background-color: #3a4450;
+  justify-content: flex-start;
+  border-radius: 10px;
+}
+.winMessage {
+  color: white;
+  border-radius: 10px;
+  padding: 1vw;
+  background-color: #22272e;
+  text-shadow: 0 6px #000;
+  border-style: inset;
+  font-family: "Permanent Marker";
+  text-align: center;
+}
+#playAgain {
+  color: white;
+  background-color: #3a4450;
+  text-shadow: 0 2px #000;
+  box-shadow: 0 5px #999;
+  border-radius: 10px;
+  padding: 1vw;
+  font-family: "Permanent Marker";
+  transition-duration: 0.4s;
+  margin-top: 5vh;
+}
+#playAgain:hover {
+  background-color: #3a4490;
+  font-style: italic;
+}
+#playAgain:active {
+  transform: translateY(4px);
+  box-shadow: 0 1px #999;
+}
+@media only screen and (max-width: 500px) {
+  .gameBoard {
+    padding: 3vw;
+  }
+  .buttonRow button,
+  .buttonRow button:disabled {
+    height: 10vh;
+    width: 20vw;
+  }
 }
