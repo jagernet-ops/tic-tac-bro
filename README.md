@@ -6,6 +6,6 @@ Tic Tac Bro is yet another simple ReactJS project I am working on to become fami
 
 ## Project Details: 
 
-Tic Tac Bro incorporates the core gameloop of tic tac toe with *fancy* elements as well as the option of playing with two people or against the computer!
+Tic Tac Bro incorporates the core gameloop of tic tac toe with *fancy* elements!
 
 -- Michael J. Shalewski
