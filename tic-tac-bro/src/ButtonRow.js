@@ -10,7 +10,6 @@ const ButtonRow = ({ callBackFunction, turn }) => {
         type="button"
         disabled={disabled[0]}
         onClick={(e) => {
-          console.log(e.currentTarget.id);
           changeState([turn, state[1], state[2]]);
           setDisabled([true, disabled[1], disabled[2]]);
           callBackFunction(parseInt(e.currentTarget.id));
@@ -23,7 +22,6 @@ const ButtonRow = ({ callBackFunction, turn }) => {
         type="button"
         disabled={disabled[1]}
         onClick={(e) => {
-          console.log(e.currentTarget.id);
           changeState([state[0], turn, state[2]]);
           setDisabled([disabled[0], true, disabled[2]]);
           callBackFunction(parseInt(e.currentTarget.id));
@@ -36,7 +34,6 @@ const ButtonRow = ({ callBackFunction, turn }) => {
         type="button"
         disabled={disabled[2]}
         onClick={(e) => {
-          console.log(e.currentTarget.id);
           changeState([state[0], state[1], turn]);
           setDisabled([disabled[0], disabled[1], true]);
           callBackFunction(parseInt(e.currentTarget.id));

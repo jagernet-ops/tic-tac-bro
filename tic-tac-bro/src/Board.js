@@ -100,7 +100,6 @@ const Board = () => {
             callBackFunction={(index) => {
               changeTurn();
               internalGameBoard[0].splice(index, 1, turn);
-              console.log(internalGameBoard);
               incrementCount(buttonCount + 1);
               setWinner(getWinner(internalGameBoard));
               checkDraw();
@@ -111,7 +110,6 @@ const Board = () => {
             callBackFunction={(index) => {
               changeTurn();
               internalGameBoard[1].splice(index, 1, turn);
-              console.log(internalGameBoard);
               incrementCount(buttonCount + 1);
               setWinner(getWinner(internalGameBoard));
               checkDraw();
@@ -122,7 +120,6 @@ const Board = () => {
             callBackFunction={(index) => {
               changeTurn();
               internalGameBoard[2].splice(index, 1, turn);
-              console.log(internalGameBoard);
               incrementCount(buttonCount + 1);
               setWinner(getWinner(internalGameBoard));
               checkDraw();
